@@ -3,9 +3,9 @@ from twilio.rest import Client
 import cv2
 a=""
 video_capture = cv2.VideoCapture(0)
-first_image = face_recognition.load_image_file(r"5.JPG")
+first_image = face_recognition.load_image_file(r"ravi.JPG")
 first_face_encoding = face_recognition.face_encodings(first_image)[0]
-second_image = face_recognition.load_image_file(r"1.jpg")
+second_image = face_recognition.load_image_file(r"jayanth.jpg")
 second_face_encoding = face_recognition.face_encodings(second_image)[0]
 
 known_face_encodings = [
